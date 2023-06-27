@@ -1,0 +1,84 @@
+:root{
+    --color-1: #143959;
+    --color-2: #A4E0DF;
+    --color-3: #4ED998;
+    --color-4: #E9D876;
+    --color-5: #85010c;
+    --color-6: #b4bbe2;
+    --color-7: #d90002;
+}
+
+.titulo{
+    text-align: center;
+    margin: 15px 5px 10px ;
+    padding: 15px;
+}
+
+.contenedor{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/   
+}
+
+.centrado{ 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+}
+
+.formulario{
+    background-color: var(--color-1);
+    border-radius: 1rem;
+    border:  3px solid #D90002;
+    padding: 1.5rem;
+    width: 60%;
+    margin: 0 20px;
+    font-size: 20px;
+} 
+
+.formulario legend{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 0 15px;
+    color: var(--color-4);
+}
+
+.formulario label{
+    font-size: 18px;
+    color: var(--color-4);
+}
+
+.formulario input:not([type="submit"]){
+    display: block;
+    height: 1.5rem;
+    width: 97%;
+    background-color: var(--color-6);
+    border: 1px solid var(--color-1);
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 10px 0px 20px 0px;
+    color: var(--color-5);
+}
+
+
+.formulario input[type="submit"]{
+    background-color: var(--color-5);
+    color: var(--color-6);
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.respuestas p{
+    font-size: 20px;
+    margin: 1rem;
+}

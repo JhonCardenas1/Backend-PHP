@@ -1,0 +1,105 @@
+:root{
+    --color-1: #143959;
+    --color-2: #A4E0DF;
+    --color-3: #4ED998;
+    --color-4: #E9D876;
+    --color-5: #85010c;
+    --color-6: #b4bbe2;
+    --color-7: #d90002;
+}
+
+table, th, td{
+    border: 3px solid var(--color-4);
+    border-collapse: collapse;
+    padding: 0.5rem;
+    /*border-spacing: 2px;*/
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    color: var(--color-4);
+    background-color: var(--color-5);
+    font-size: 20px;
+}
+
+tr{
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: var(--color-1);
+    color: #ffff;
+}
+
+tr:nth-child(odd){
+    background-color: #ffff;
+    color: var(--color-5)
+}
+
+.titulo{
+    text-align: center;
+    margin: 5px 5px 5px ;
+    padding: 15px;
+}
+
+.contenedor{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem;  
+}
+
+.formulario-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.formulario{
+    background-color: var(--color-1);
+    border-radius: 1rem;
+    border:  3px solid var(--color-7);
+    padding: 1rem;
+    width: 100%;
+    margin: 0 20px;
+    font-size: 20px;
+} 
+
+.formulario label{
+    display: block;
+    font-size: 18px;
+    color: var(--color-4);
+    text-align: center;
+}
+
+.formulario input:not([type="submit"]){
+    height: 1.7rem;
+    width: 70%;
+    background-color: var(--color-6);
+    border: 1px solid var(--color-1);
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 1px;
+    margin-top: 1rem;
+    color: var(--color-5);
+   
+}
+
+.formulario input[type="submit"]{
+    background-color: var(--color-5);
+    color: var(--color-6);
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    width: 25%;
+    border-radius: 0.5rem;
+}
+
+.contenedor-tabla{
+    margin: 1rem 2.5rem 2.5rem;
+}
+
