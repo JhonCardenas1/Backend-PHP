@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Volcando datos para la tabla mi_proyecto.usuarios: ~9 rows (aproximadamente)
+-- Volcando datos para la tabla mi_proyecto.usuarios: ~11 rows (aproximadamente)
 INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `cedula`) VALUES
 	(1, 'Andres', 'Pineda', 100000000),
 	(2, 'Camilo', 'Gutierrez', 200000000),
